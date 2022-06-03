@@ -1,0 +1,6 @@
+node_modules
+.gitignore
+capstone.pem
+package-lock.json
+uplodas
+dist

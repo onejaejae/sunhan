@@ -1,0 +1,28 @@
+version: "3"
+services:
+  nginx:
+    depends_on:
+      - redis-server
+      - node-app
+    image: staticfloat/nginx-certbot
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      CERTBOT_EMAIL: magicnc7@gmail.com
+    restart: always
+    volumes:
+      - ../conf.d:/etc/nginx/user.conf.d:ro
+      - letsencrypt:/etc/letsencrypt
+  redis-server:
+    image: "redis"
+    restart: always
+    container_name: redis
+  node-app:
+    build: ./
+    restart: always
+    container_name: node
+    ports:
+      - "4000:4000"
+volumes:
+  letsencrypt:
