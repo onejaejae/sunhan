@@ -155,6 +155,8 @@ Docker Container는 Reverse proxy를 담당하는 `Nginx Container`, 프론트�
 <BR>
 
 - DB는 MongoDB 사용
+ 
+ <br>
 
 - Node.js와 MongoDB를 위한 ODM 라이브러리인 Mongoose 사용
 
@@ -281,6 +283,8 @@ Google 서버 응답시간 관련 자료에 따르면 서버 응답 시간을 20
 <img src="https://user-images.githubusercontent.com/62149784/171849606-89dc5bb6-10eb-4dd3-952c-882068c9881e.png">
 
 <br>
+ 
+ `참고자료` (https://code-masterjung.tistory.com/91)
 
 ### 3.2 Pagination
 
